@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoSelector">
+            <connections>
+                <outlet property="slider" destination="oZ1-dE-mK5" id="tca-i2-kuS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oZ1-dE-mK5">
+                    <rect key="frame" x="6" y="113" width="588" height="31"/>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFv-jQ-edZ">
+                    <rect key="frame" x="225" y="202" width="151" height="50"/>
+                    <state key="normal" title="Brunch Data">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onCrunchData:" destination="-1" eventType="touchUpInside" id="skP-LM-CXP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oZ1-dE-mK5" secondAttribute="trailing" constant="8" id="4BK-7v-gs9"/>
+                <constraint firstAttribute="centerX" secondItem="yFv-jQ-edZ" secondAttribute="centerX" id="PqH-80-zff"/>
+                <constraint firstItem="yFv-jQ-edZ" firstAttribute="top" secondItem="oZ1-dE-mK5" secondAttribute="bottom" constant="59" id="aCt-xw-6i1"/>
+                <constraint firstItem="oZ1-dE-mK5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="113" id="l9j-jd-F7l"/>
+                <constraint firstItem="oZ1-dE-mK5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="onc-Jb-Xkm"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
